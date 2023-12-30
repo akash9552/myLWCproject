@@ -14,6 +14,7 @@ public class AccHandalerClass {
         }
     }
     //Prevent deletion of an account if there is any case related to that account.
+    // this is a before Trigger where we have to use before delete .
     Public static void preventAccDeletionCase(List<Account> accOldList){
         Set<Id> accId = new Set<Id>();
         
