@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="child comp" icon-name="custom:custom11">
+        <div class="slds-p-horizontal_small">
+     <lightning-input type="Number"
+                      label="Enter some Number"
+                     onchange={handleChange}>
+     </lightning-input>
+    </div>
+    
+     <lightning-button variant="brand-outline"
+                     label="add"
+                     title="add number"
+                     onclick={addNuber}
+                     class="slds-m-left_x-small">
+                     
+     </lightning-button>
+    
+    
+     <lightning-button variant="destructive-text"
+                     label="subtract"
+                     title="subtract number"
+                     onclick={subtarctNumber}
+                     class="slds-m-left_x-small">
+     </lightning-button>
+    
+ 
+    </lightning-card>
+     
+ </template>

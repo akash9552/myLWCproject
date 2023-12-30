@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Wire decorater demo" icon-name="custom:custom14">
+          <template if:true={fetchAccounts.data}>
+            
+                <table style="border: 2px solid;">
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                    </tr>
+           
+                    
+                 <template for:each={fetchAccounts.data}
+                     for:item="acc">
+                     <tr key={acc.id}>
+                       <td>{acc.Id}</td>
+                        <td>{acc.Name}</td>
+                     </tr>
+                </template>
+            </table>
+          </template> 
+        
+    </lightning-card>
+    
+</template>

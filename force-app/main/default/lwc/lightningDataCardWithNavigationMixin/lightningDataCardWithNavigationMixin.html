@@ -1,0 +1,13 @@
+<template>
+    <div class="slds-p-horizontal_x-large">
+    <lightning-card title="Data Card with Action Button"
+                    icon-name="standard:account">
+        <lightning-datatable data={fetchedAccounts}
+                            columns={columns}
+                            key-field="Id"
+                            onrowaction={handleRowAction}>
+
+        </lightning-datatable>
+    </lightning-card>
+    </div>
+</template>

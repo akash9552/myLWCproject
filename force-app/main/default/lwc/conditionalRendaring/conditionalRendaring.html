@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="conditional Rendaring">
+        <div class="slds-m-around_medium">
+            <lightning-input type="checkbox" label="show details" onchange={handleChange}>
+
+            </lightning-input>
+            <template if:true={areDataVisible}>
+                <div class ="slds-m-vertical_medium">
+                    This is True block!
+                </div>
+            </template>
+            <template if:false={areDataVisible}>
+                <div class ="slds-m-vertical_medium">
+                    This is false block!
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

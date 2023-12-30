@@ -1,0 +1,19 @@
+<apex:page standardController="Contact">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8pQMttN6eXMPtCAdQPNvhZWMg2ISYrrrYRA&usqp=CAU"/>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Contact.FirstName}"/><br/>
+                <apex:inputField value="{!Contact.LastName}"/><br/>
+                <apex:inputField value="{!Contact.Phone}"/><br/>
+                <apex:inputField value="{!Contact.Email}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="save"/>
+                <apex:commandButton action="{!cancel}" value="cancel"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+</apex:page>

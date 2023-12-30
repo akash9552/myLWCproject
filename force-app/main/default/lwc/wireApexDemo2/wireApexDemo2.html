@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Account Records" icon-name="Utility:activity">
+        <ul class = "slds-m-around_medium">
+        <template if:true ={fetchedAccounts}>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>          
+            <template for:each={fetchedAccounts} 
+                        for:item="acc">
+                <tr key ={acc.Id}>
+                  <td>{acc.Id}</td>
+                  <td>{acc.Name}</td>
+                </tr>
+            </template>
+        </table>
+        </template>
+        </ul>
+    </lightning-card>
+    
+</template>

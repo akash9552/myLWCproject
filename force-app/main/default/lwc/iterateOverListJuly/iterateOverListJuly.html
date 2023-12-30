@@ -1,0 +1,22 @@
+<template>
+
+
+    <lightning-card title="Demo for each" icon-name="standerd:contact">
+
+   <template for:each={contacts} for:item="con" for:index="index">
+
+    <p key = {con.ID}>{index} || {con.ID} || {con.Name} || {con.Email}</p>
+    
+   </template>
+    </lightning-card>
+
+    <lightning-card title="Demo Iterator" icon-name="standard:contact_lidt">
+        <template iterator:it={contacts}>
+            <li key={it.value.Id}>
+                <div if:true={it.first} class="list-first"></div>
+                {it.index} || {it.value.Id} || {it.value.Name} || {it.value.Email}
+                <div if:true={it.last} class="list-last"></div>
+            </li>
+        </template>
+    </lightning-card>
+</template>

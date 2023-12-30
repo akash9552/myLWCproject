@@ -1,0 +1,9 @@
+<apex:page standardController="Account" >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            Account Id is : {!Account.Id} <br/>
+            Account Name is : {!Account.Name}<br/>
+            AccountNumber is : {!Account.AccountNumber}
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

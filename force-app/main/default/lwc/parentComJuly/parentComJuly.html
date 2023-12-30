@@ -1,0 +1,10 @@
+<template>
+    <p> Text inside Parent </p>
+    <c-child-comp-july message="Message from child" page-no="12 " track-prop="this is tarckprop" onpassdatatoparent={handleDataFromChild}></c-child-comp-july>
+    <div>
+        <lightning-button variant="brand" label="call child method" onclick={handleButtonClick}>
+       
+        </lightning-button>
+        <p> {messageFromChild}</p>
+    </div>
+</template>

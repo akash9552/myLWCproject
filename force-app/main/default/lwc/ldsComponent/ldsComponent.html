@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Account Record">
+        <lightning-record-form 
+                                object-api-name={objectApiName}
+                                fields={fields} 
+                                columns="4" 
+                                mode="edit" 
+                                onsubmit={handleSubmit}
+                                layout-type="Compact">
+        </lightning-record-form>
+    </lightning-card>
+</template>

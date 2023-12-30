@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="Parent comp" icon-name="custom:custom10">
+        <div class="slds-p-horizontal_small">
+            count value is : {Count}
+        </div>
+        
+        <c-child-comp onadd={addMethod}
+                    onsubtract={subtractMethod}>
+         </c-child-comp>
+    </lightning-card>
+    
+</template>

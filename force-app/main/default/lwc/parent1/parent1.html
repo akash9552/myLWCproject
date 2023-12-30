@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Parent component">
+        
+        
+        <c-child1></c-child1>
+        <lightning-button variant="brand"
+                          label="increase count"
+                          title="increase count"
+                           onclick={parentFunction1} 
+                           class="slds-m-left_x-small">
+        </lightning-button>
+        <lightning-button variant="brand"
+                          label="decrease count"
+                          title="decrease count"
+                           onclick={parentFunction2} 
+                           class="slds-m-left_x-small">
+        </lightning-button>
+
+    </lightning-card>
+</template>

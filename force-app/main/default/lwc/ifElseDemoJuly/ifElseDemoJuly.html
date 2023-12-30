@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="if-else Demo">
+        <template if:true={isText1}>
+        {Text1}
+        </template>
+        <template if:false={isText1}>
+        {Text2}
+        </template>
+
+    </lightning-card>
+    <lightning-button variant="brand" title="Display Text 1" label="Display Text 1" onclick={DisplayText1}></lightning-button>
+    <lightning-button variant="destructive" title="Display Text 2" label="Display Text 2" onclick={DisplayText2}></lightning-button>
+</template>

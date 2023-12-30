@@ -1,0 +1,16 @@
+<apex:page controller="VFpageController_2">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:inputField value="{!acc.Name}"/><br/>
+               <apex:inputField value="{!acc.Email__c}"/><br/>
+             <apex:inputField value="{!acc.Website}"/><br/>  
+             <apex:inputField value="{!acc.Phone}"/><br/>  
+             <apex:inputField value="{!acc.Industry}"/><br/>  
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons location="Bottom">
+            <apex:commandButton action="{!save}" value="save"/>
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

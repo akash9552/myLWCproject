@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  title="Hello">
+
+        <p> {message} </p>
+        <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text"
+                        label="Enter some text"
+                        placeholder="type here...">
+          </lightning-input>
+    </div>
+
+                <lightning-button variant="base" 
+                                    label="Base" 
+                                     title="Looks like a link" 
+                                    onclick={handleClick} 
+                                     class="slds-m-left_x-small">
+                </lightning-button>
+
+    </lightning-card>
+</template>

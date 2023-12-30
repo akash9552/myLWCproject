@@ -1,0 +1,11 @@
+<apex:page Controller="VFpageController">
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                Account Id is: {!acc.Id}<br/>
+                Account Name is: {!acc.Name}
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+</apex:page>

@@ -1,0 +1,33 @@
+<template>
+    <lightning-card variant="Narrow"
+                     title="check tarck" 
+                     icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+        firstName:{fullName.firstName}
+        <br/>
+        lastName:{fullName.lastName}  
+        </div>
+                   
+      
+        <lightning-input type="text"
+                         name="firstName"
+                         label="FirstName"
+                         onchange={handelInputChange} 
+                         placeholder="type first name">
+           
+        </lightning-input>
+        <br/>
+        <lightning-input type="text"
+                         name="lastName"
+                         label="LastName"
+                         onchange={handelInputChange} 
+                         placeholder="type last name">
+           
+        </lightning-input>
+
+
+        
+
+    </lightning-card>
+  
+</template>

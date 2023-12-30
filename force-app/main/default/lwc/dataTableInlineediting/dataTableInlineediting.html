@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Inline editing Contact" icon-name="custom:custom95">
+        <lightning-datatable data={conData}
+                            columns={columns}
+                            key-field="Id"
+                            draft-values={draftValues}
+                            onsave={handlesave}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

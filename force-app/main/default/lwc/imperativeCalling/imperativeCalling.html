@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Imperative call AccRecord" icon-name="custom:custom18">
+        <ul class = "slds-m-around_medium">
+        <lightning-button variant="brand" 
+                            label="Call Apex" 
+                            title="Call Apex" 
+                            onclick={handleClick} 
+                            class="slds-m-left_x-small">
+    </lightning-button>
+    <template if:true ={showTable}>
+        <table style="bborder: 1px solid;">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>          
+        <template for:each={fetchedAccounts} 
+                    for:item="acc">
+            <tr key ={acc.Id}>
+              <td>{acc.Id}</td>
+              <td>{acc.Name}</td>
+            </tr>
+        </template>
+    </table>
+    </template>
+</ul>
+    </lightning-card>
+    
+</template>
