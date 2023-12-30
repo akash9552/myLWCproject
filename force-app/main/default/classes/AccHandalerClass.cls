@@ -29,7 +29,7 @@ public class AccHandalerClass {
         }
     }
     Public static void preventAccDeletionIfContact(List<Account> accOldList){
-       
+       // just comment
         List<Contact> conList = [SELECT Id FROM Contact WHERE AccountId IN :accOldList];
         for(Account acc: accOldList){
             if(conList.size()>0){
